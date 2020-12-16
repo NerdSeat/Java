@@ -2,13 +2,12 @@ public class mergeSort
 {
     public static void main(String[] args)
     {
-        int [] intArray = {20,35,-15,7,55,1,-22};
+        int [] intArray = {20,35,-15,7,55,1,-22,10};
 
         sort(intArray, 0, intArray.length);
         for(int i = 0;i<intArray.length;i++)
             System.out.print(intArray[i]+"\t");
     }
-
     public static void sort(int arr[],int start,int end)
     {
         int mid = (start+end)/2;
@@ -23,7 +22,6 @@ public class mergeSort
     {
         if(arr[mid-1]<=arr[mid])
             return;
-        
         int i = start;
         int j =mid;
         int [] temp = new int[end-start];
